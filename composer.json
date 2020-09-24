@@ -1,0 +1,14 @@
+{
+    "name": "lecneri/confere_loterias",
+    "description": "Lê jogos da loterias para conferir com os meus e dizer se ganhei alguma coisa",
+    "autoload": {
+        "psr-4": { "App\\": "src/" }
+    },
+    "require": {
+        "symfony/console": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    }
+}
