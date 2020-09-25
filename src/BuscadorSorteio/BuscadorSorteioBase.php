@@ -29,6 +29,7 @@ abstract class BuscadorSorteioBase
 
     public function obterDezenasSorteadasInt(int $numeroSorteio): array
     {
-        return array_map(fn ($i) => intval($i), $this->obterDezenasSorteadas($numeroSorteio));
+        $dezenasSorteadas = $this->obterDezenasSorteadas($numeroSorteio);
+        return array_map(fn ($i) => intval($i), $dezenasSorteadas);
     }
 }
